@@ -1,0 +1,9 @@
+*.zip
+*.log
+.DS_Store
+Thumbs.db
+node_modules/
+vendor/
+.idea/
+.vscode/
+.phpunit.result.cache

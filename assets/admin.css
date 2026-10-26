@@ -1,0 +1,169 @@
+.qslm-wrap {
+	max-width: 1200px;
+}
+
+.qslm-muted {
+	color: #646970;
+}
+
+.qslm-attribution {
+	margin: 6px 0 14px;
+	color: #646970;
+	font-size: 12px;
+	line-height: 1.7;
+}
+
+.qslm-attribution a {
+	color: #2271b1;
+	text-decoration: none;
+}
+
+.qslm-attribution a:hover {
+	text-decoration: underline;
+}
+
+.qslm-stats {
+	display: grid;
+	grid-template-columns: repeat(5, minmax(0, 1fr));
+	gap: 14px;
+	margin: 20px 0 24px;
+}
+
+.qslm-stat {
+	padding: 18px;
+	border: 1px solid #dcdcde;
+	border-radius: 10px;
+	background: #fff;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .04);
+}
+
+.qslm-stat span {
+	display: block;
+	color: #646970;
+	font-size: 12px;
+}
+
+.qslm-stat strong {
+	display: block;
+	margin-top: 6px;
+	font-size: 28px;
+	line-height: 1.1;
+}
+
+.qslm-grid-2 {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 18px;
+}
+
+.qslm-panel,
+.qslm-form-card {
+	margin: 18px 0;
+	padding: 18px 20px;
+	border: 1px solid #dcdcde;
+	border-radius: 10px;
+	background: #fff;
+}
+
+.qslm-panel h2,
+.qslm-form-card h2 {
+	margin-top: 0;
+	font-size: 16px;
+}
+
+.qslm-workflow {
+	margin: 12px 0 18px;
+	padding: 12px 15px;
+	border-left: 3px solid #2271b1;
+	background: #f6f7f7;
+	color: #50575e;
+	font-size: 13px;
+	line-height: 1.8;
+}
+
+.qslm-style-thumb {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 64px;
+	height: 48px;
+	border: 1px solid #dcdcde;
+	border-radius: 6px;
+	object-fit: contain;
+	background: #fff;
+}
+
+.qslm-style-thumb--empty {
+	background: linear-gradient(135deg, #3d6bff, #7c5cff 58%, #06b6d4);
+	color: #fff;
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: .06em;
+}
+
+.qslm-form-card .form-table th {
+	width: 180px;
+}
+
+.qslm-form-card .notice {
+	margin: 10px 0;
+}
+
+.qslm-toolbar {
+	display: flex;
+	gap: 8px;
+	align-items: center;
+	margin: 18px 0 8px;
+}
+
+.qslm-actions {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 5px;
+}
+
+.qslm-badge {
+	display: inline-block;
+	padding: 2px 8px;
+	border-radius: 999px;
+	background: #f0f0f1;
+	color: #50575e;
+	font-size: 12px;
+	line-height: 1.7;
+	white-space: nowrap;
+}
+
+.qslm-badge.is-success {
+	background: #edfaef;
+	color: #116329;
+}
+
+.qslm-badge.is-warning {
+	background: #fff8e5;
+	color: #8a5700;
+}
+
+.qslm-badge.is-danger {
+	background: #fcf0f1;
+	color: #b32d2e;
+}
+
+.qslm-danger {
+	color: #b32d2e !important;
+	border-color: #f0b7b7 !important;
+}
+
+.qslm-wrap .widefat td,
+.qslm-wrap .widefat th {
+	vertical-align: top;
+}
+
+@media (max-width: 900px) {
+	.qslm-stats {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.qslm-grid-2 {
+		grid-template-columns: 1fr;
+	}
+}
