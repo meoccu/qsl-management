@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.5
+
+- Share the `cf-turnstile` script handle with the Theme Wing comment form, preventing a second copy of the Cloudflare Turnstile API on pages that contain both comments and an exchange form.
+- Render QSL exchange Turnstile widgets explicitly so they work alongside the theme's explicit comment widget.
+
 ## 1.0.4
 
 - Add English README.

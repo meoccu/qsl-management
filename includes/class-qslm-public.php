@@ -61,7 +61,10 @@ class QSLM_Public {
 		wp_enqueue_style( 'qslm-public', QSLM_URL . 'assets/public.css', array(), QSLM_VERSION );
 		wp_enqueue_script( 'qslm-public', QSLM_URL . 'assets/public.js', array(), QSLM_VERSION, true );
 		if ( $has_exchange && self::turnstile_active() ) {
-			wp_enqueue_script( 'qslm-turnstile', 'https://challenges.cloudflare.com/turnstile/v0/api.js', array(), null, true );
+			// Share the core Turnstile handle with the theme so a page that
+			// contains comments and an exchange form loads api.js only once.
+			wp_enqueue_script( 'cf-turnstile', 'https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit', array(), null, true );
+			wp_script_add_data( 'cf-turnstile', 'strategy', 'defer' );
 		}
 	}
 

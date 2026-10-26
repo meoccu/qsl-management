@@ -4,7 +4,7 @@ Tags: qsl, amateur radio, qso, ham radio, card management
 Requires at least: 6.2
 Tested up to: 6.8
 Requires PHP: 7.4
-Stable tag: 1.0.4
+Stable tag: 1.0.5
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -42,6 +42,10 @@ WordPress 移植：砂糖橘猫
 原项目与本移植均使用 GPL-3.0-or-later。
 
 == 变更日志 ==
+
+= 1.0.5 =
+* 与主题评论区共用 `cf-turnstile` 脚本句柄，避免同一页面加载两份 Turnstile API。
+* 换卡表单改为显式渲染 Turnstile，兼容主题评论区的显式验证组件。
 
 = 1.0.4 =
 * 增加英文 README、CHANGELOG 和自动 GitHub Release 工作流。
