@@ -1,0 +1,50 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Release tag, for example v1.0.4'
+        required: true
+        default: 'v1.0.4'
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.inputs.tag || github.ref }}
+
+      - name: Resolve tag name
+        run: |
+          if [ -n "${{ github.event.inputs.tag }}" ]; then
+            echo "TAG_NAME=${{ github.event.inputs.tag }}" >> "$GITHUB_ENV"
+          else
+            echo "TAG_NAME=${GITHUB_REF_NAME}" >> "$GITHUB_ENV"
+          fi
+
+      - name: Build plugin ZIP
+        run: |
+          mkdir -p build/qsl-management
+          git archive --format=tar HEAD | tar -x -C build/qsl-management
+          rm -rf build/qsl-management/.github
+          rm -f build/qsl-management/.gitignore
+          cd build
+          zip -r "qsl-management-${TAG_NAME}.zip" qsl-management
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ env.TAG_NAME }}
+          name: QSL Management WordPress ${{ env.TAG_NAME }}
+          body_path: CHANGELOG.md
+          files: build/qsl-management-${{ env.TAG_NAME }}.zip
+          generate_release_notes: false

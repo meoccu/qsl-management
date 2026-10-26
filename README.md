@@ -1,5 +1,7 @@
 # QSL 卡片管理系统（WordPress 插件）
 
+[English README](README.en.md)
+
 > **原作者：bi1kbu**  
 > **GitHub 仓库：<https://github.com/bi1kbu/qsl-management>**  
 > **Halo 应用市场：<https://www.halo.run/store/apps/app-z7ouhnfn>**  

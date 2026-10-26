@@ -4,7 +4,7 @@ Tags: qsl, amateur radio, qso, ham radio, card management
 Requires at least: 6.2
 Tested up to: 6.8
 Requires PHP: 7.4
-Stable tag: 1.0.3
+Stable tag: 1.0.4
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -42,6 +42,9 @@ WordPress 移植：砂糖橘猫
 原项目与本移植均使用 GPL-3.0-or-later。
 
 == 变更日志 ==
+
+= 1.0.4 =
+* 增加英文 README、CHANGELOG 和自动 GitHub Release 工作流。
 
 = 1.0.3 =
 * 公开线上换卡与实体卡申请改为可视化卡片样式选择：显示卡面图片、版本名称和剩余数量；未上传图片时显示渐变占位卡面。

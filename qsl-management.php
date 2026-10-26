@@ -3,7 +3,7 @@
  * Plugin Name:       QSL 卡片管理系统
  * Plugin URI:        https://github.com/bi1kbu/qsl-management
  * Description:       业余无线电 QSO/SWL、QSL 卡片、线上/线下换卡、收卡与公开查询管理。WordPress 版移植。
- * Version:           1.0.3
+ * Version:           1.0.4
  * Requires at least: 6.2
  * Requires PHP:      7.4
  * Author:            bi1kbu
@@ -22,7 +22,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'QSLM_VERSION', '1.0.3' );
+define( 'QSLM_VERSION', '1.0.4' );
 define( 'QSLM_FILE', __FILE__ );
 define( 'QSLM_DIR', plugin_dir_path( __FILE__ ) );
 define( 'QSLM_URL', plugin_dir_url( __FILE__ ) );
