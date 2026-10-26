@@ -12,6 +12,14 @@ A WordPress port of the Halo 2 plugin **qsl-management** for amateur radio QSL w
 - **This repository:** <https://github.com/meoccu/qsl-management>
 - **License:** GPL-3.0-or-later (original project is GPL-3.0)
 
+## Contributors
+
+- **meoccu** — WordPress port owner and maintainer · <https://github.com/meoccu>
+- **bi1kbu** — original Halo plugin author · <https://github.com/bi1kbu>
+- **砂糖橘猫** — WordPress port author · <https://www.luna.tel>
+
+See [CONTRIBUTORS.md](CONTRIBUTORS.md) for details.
+
 ## Installation
 
 1. Download the latest release ZIP.

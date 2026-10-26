@@ -14,6 +14,7 @@
 - 网站：<https://www.luna.tel>
 - 仓库：<https://github.com/meoccu/qsl-management>
 - 移植许可：GPL-3.0-or-later
+- 维护者：**meoccu**（<https://github.com/meoccu>）
 
 ## 说明
 

@@ -48,6 +48,14 @@
 
 因此「本台卡片样式」是预先配置的模板；「卡片记录」是 QSO 或审核通过后生成的正式卡片，两者不是同一个东西。
 
+## 贡献者
+
+- **meoccu**：WordPress 移植维护者 · <https://github.com/meoccu>
+- **bi1kbu**：原 Halo 插件作者 · <https://github.com/bi1kbu>
+- **砂糖橘猫**：WordPress 移植作者 · <https://www.luna.tel>
+
+完整说明见 [CONTRIBUTORS.md](CONTRIBUTORS.md)。
+
 ## 安装
 
 1. 将 `qsl-management` 目录上传到 `wp-content/plugins/`，或在后台「插件 → 安装插件 → 上传插件」上传 ZIP。

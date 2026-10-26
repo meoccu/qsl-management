@@ -1,5 +1,5 @@
 === QSL 卡片管理系统 ===
-Contributors: bi1kbu
+Contributors: meoccu, bi1kbu
 Tags: qsl, amateur radio, qso, ham radio, card management
 Requires at least: 6.2
 Tested up to: 6.8
